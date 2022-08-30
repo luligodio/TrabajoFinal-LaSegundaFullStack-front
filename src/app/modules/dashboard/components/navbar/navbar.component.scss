@@ -1,0 +1,9 @@
+@use "styles" as styles;
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.bgcolor {
+  background-color: styles.colors(warnDark);
+}

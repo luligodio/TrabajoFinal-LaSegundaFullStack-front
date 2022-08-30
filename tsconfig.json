@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "skipLibCheck":true,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -15,6 +16,53 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      // Shared
+      "@gdp/shared/modules": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/shared/modules/index.ts"
+      ],
+      "@gdp/shared/guards": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/shared/guards/index.ts"
+      ],
+      // Auth
+      "@gdp/auth/views": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/auth/views/index.ts"
+      ],
+      "@gdp/auth/modules": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/auth/modules/index.ts"
+      ],
+      "@gdp/auth/models": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/auth/models/index.ts"
+      ],
+      "@gdp/auth/services": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/auth/services/index.ts"
+      ],
+      "@gdp/auth/components": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/auth/components/index.ts"
+      ],
+      // Dashboard
+      "@gdp/dashboard/views": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/dashboard/views/index.ts"
+      ],
+      "@gdp/dashboard/modules": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/dashboard/modules/index.ts"
+      ],
+      "@gdp/dashboard/models": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/dashboard/models/index.ts"
+      ],
+      "@gdp/dashboard/services": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/dashboard/services/index.ts"
+      ],
+      "@gdp/dashboard/components": [
+        "D:/Usuarios/Luciana/Documents/GitHub/Trabajo Final LasegundaFullStack/TrabajoFinal-LaSegundaFullstack-front/src/app/modules/dashboard/components/index.ts"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
   }
 }
