@@ -20,7 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     ThemeModule.forRoot({
       themes: [lightTheme, darkTheme],
-      active: 'darktheme'
+      active: 'darkTheme'
     })],
   providers: [],
   bootstrap: [AppComponent],
